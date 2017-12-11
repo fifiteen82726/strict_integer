@@ -2,8 +2,8 @@ module StrictInteger
   require 'strict_integer/version'
 
   def strict_to_i
-    num = string.to_i
-    num if num.to_s == string
+    num = self.to_i
+    num if num.to_s == self
   end
 end
 
