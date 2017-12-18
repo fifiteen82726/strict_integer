@@ -1,6 +1,6 @@
-module StrictInteger
-  require 'strict_integer/version'
+require 'strict_integer/version'
 
+module StrictInteger
   def strict_to_i
     num = self.to_i
     num if num.to_s == self
@@ -20,3 +20,5 @@ end
 class NilClass
   include StrictInteger
 end
+
+# '2a2b'.strict_to_i
